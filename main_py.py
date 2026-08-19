@@ -14,7 +14,7 @@ import joblib
 app = FastAPI()
 
 # Load trained model
-model = joblib.load("/content/model.pkl")
+model = joblib.load("model.pkl")
 
 class IrisInput(BaseModel):
     sepal_length: float
